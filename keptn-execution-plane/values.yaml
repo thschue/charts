@@ -1,0 +1,32 @@
+helm-service:
+  helmservice:
+    image:
+      repository: thschue/helm-service
+      tag: 0.8.0-5
+  distributor:
+    stageFilter: ""
+    projectFilter: ""
+    image:
+      tag: 0.8.0
+  remoteControlPlane:
+    enabled: true
+    api:
+      hostname: ""
+      token: ""
+
+
+jmeter-service:
+  jmeterservice:
+    image:
+      tag: 0.8.0
+  distributor:
+    stageFilter: ""
+    projectFilter: ""
+    image:
+      tag: 0.8.0
+  remoteControlPlane:
+    enabled: true
+    api:
+      hostname: ""
+      token: ""
+   
